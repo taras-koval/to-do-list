@@ -1,0 +1,7 @@
+### Intellij ###
+.idea
+
+### Composer ###
+composer.phar
+/vendor/
+composer.lock

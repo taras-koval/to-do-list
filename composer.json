@@ -1,0 +1,10 @@
+{
+    "name": "taras/localhost",
+    "authors": [
+        {
+            "name": "Taras",
+            "email": "tkoval37@gmail.com"
+        }
+    ],
+    "require": {}
+}
