@@ -7,18 +7,18 @@ class Database
     {
         $params = include(ROOT . '/config/db.php');
 
-        $dsn = "mysql:host={$params['host']};dbname={$params['dbname']}";
+        $dsn = "mysql:host={$params['host']};dbname={$params['db']}";
+
+        $options = [
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_PERSISTENT => true
+        ];
 
         try {
-            $dbh = new PDO(
-                $dsn, 
-                $params['user'], 
-                $params['password'],
-                // Persistent connections
-                [PDO::ATTR_PERSISTENT => true]
-            );
+            $dbh = new PDO($dsn, $params['user'], $params['pass'], $options);
+
         } catch (PDOException $e) {
-            echo $e->getMessage();
+            throw new PDOException($e->getMessage());
         }
 
         $dbh->exec("set names utf8");
