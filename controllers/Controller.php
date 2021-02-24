@@ -2,12 +2,12 @@
 
 abstract class Controller
 {
-	protected $title;
+    protected $title;
 
-	function __construct($title = 'Document')
-	{
-		$this->title = $title;
-	}
+    function __construct($title = 'Document')
+    {
+        $this->title = $title;
+    }
 
 }
 
