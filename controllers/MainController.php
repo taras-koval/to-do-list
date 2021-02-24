@@ -7,7 +7,7 @@ class MainController extends Controller
 
     public function actionIndex()
     {
-        $this->title = "Test";
+        // $this->title = "Test";
         
         require_once(ROOT.'/views/main/index.php');
         return true;
