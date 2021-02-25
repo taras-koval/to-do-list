@@ -102,7 +102,9 @@ button:disabled, input:disabled, optgroup:disabled, select:disabled, textarea:di
     opacity: 0.5;
 }
 
-button {
+button,
+input[type=submit],
+input[type=button] {
     display: inline-block;
     position: relative;
     padding-left: 30px;
@@ -115,7 +117,9 @@ button {
     user-select: none;
 }
 
-button:not(:disabled) {
+button:not(:disabled),
+input[type=submit]:not(:disabled),
+input[type=button]:not(:disabled) {
     cursor: pointer;
 }
 
@@ -124,6 +128,13 @@ input, select {
     padding-right: 10px;
     line-height: 20px;
     height: 40px;
+    width: 100%;
+}
+
+textarea {
+    padding: 10px;
+    line-height: 20px;
+    width: 100%;
 }
 
 select {

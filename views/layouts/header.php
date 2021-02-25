@@ -8,7 +8,7 @@
     <meta name="keywords" content="to do list">
     <meta name="author" content="Taras Koval">
 
-    <title><?php echo $this->title; ?></title>
+    <title><?= $this->title ?></title>
     
     <link rel="stylesheet" href="/template/styles/fonts.css">
     <link rel="stylesheet" href="/template/styles/common.css">
@@ -23,8 +23,19 @@
         <a href="/" class="logo">To Do List</a>
 
         <nav class="page-nav">
-            <!-- <a href="">Link1</a>
-            <a href="">Link2</a> -->
+            <?php if (isset($_SESSION['user'])): ?>
+
+            <span class="username"><?= $_SESSION['user']['username'] ?></span>
+
+            <a href="/lists/">My lists</a>
+            <a href="/logout/">Logout</a>
+
+            <?php else: ?>
+
+            <a href="/login/">Login</a>
+            <a href="/register/">Register</a>
+
+            <?php endif; ?>
         </nav>
 
     </div>

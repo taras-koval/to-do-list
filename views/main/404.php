@@ -1,4 +1,4 @@
-<?php include_once ROOT.'/views/layouts/header.php' ?>
+<?php include_once ROOT . '/views/layouts/header.php' ?>
 
 <main>
     <section class="error-page content">
@@ -8,4 +8,4 @@
     </section>
 </main>
 
-<?php include_once ROOT.'/views/layouts/footer.php' ?>
+<?php include_once ROOT . '/views/layouts/footer.php' ?>

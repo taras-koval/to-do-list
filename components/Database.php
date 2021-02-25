@@ -13,7 +13,8 @@ class Database
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
             PDO::ATTR_PERSISTENT => true
         ];
-
+        
+        
         try {
             $dbh = new PDO($dsn, $params['user'], $params['pass'], $options);
 
@@ -22,7 +23,6 @@ class Database
         }
 
         $dbh->exec("set names utf8");
-
         return $dbh;
     }
 
