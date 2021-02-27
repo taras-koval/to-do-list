@@ -12,7 +12,7 @@ class UserController extends Controller
     public function actionRegister()
     {
         if (isset($_SESSION['user'])) {
-            header("Location: /");
+            header("Location: /user/lists/");
             return true;
         }
 
@@ -63,7 +63,7 @@ class UserController extends Controller
     public function actionLogin()
     {
         if (isset($_SESSION['user'])) {
-            header("Location: /");
+            header("Location: /user/lists/");
             return true;
         }
 

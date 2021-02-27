@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zxx">
 <head>
     <meta charset="UTF-8">
@@ -27,7 +27,7 @@
 
             <span class="username"><?= $_SESSION['user']['username'] ?></span>
 
-            <a href="/lists/">My lists</a>
+            <a href="/user/lists/">My lists</a>
             <a href="/logout/">Logout</a>
 
             <?php else: ?>

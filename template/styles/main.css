@@ -143,6 +143,62 @@ button:active, input[type=submit]:active {
     border-radius: 3px;
 }
 
+.main-block {
+    width: 620px;
+    padding: 40px;
+    margin-top: 5vh;
+}
+
+.add-record-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.add-record-form input[type=text] {
+    flex: 1;
+}
+
+.add-record-form input[type=submit] {
+    flex: 0 0 100px;
+    margin-left: 20px;
+}
+
+.lists-table {
+    /*margin-top: 40px;*/
+}
+
+.lists-table td, .tasks-table td {
+    /*text-align: left;*/
+    padding: 15px 20px;
+}
+
+.done {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.td-center {
+    text-align: center;
+}
+
+input[type="checkbox"] {
+    height: 20px;
+}
+
+td a:hover {
+    text-decoration: none;
+}
+
+.save-btn {
+    width: 200px;
+    margin: 40px auto;
+}
+
+.tasks-form {
+    display: flex;
+    flex-direction: column;
+}
+
 /* FOOTER */
 
 .page-footer {
